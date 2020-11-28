@@ -1,0 +1,40 @@
+//
+//Container
+//
+.container {
+    max-width: 1300px;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+//
+//Opacity
+//
+.opacity-dark {
+    opacity: $opacity-dark;
+}
+.opacity-mid {
+    opacity: $opacity-mid;
+}
+.opacity-light {
+    opacity: $opacity-light;
+}
+
+//
+//Backgrounds
+//
+.bg-black {
+    background-color: $black;
+}
+
+.bg-black-blue {
+    background-color: $black-blue;
+}
+
+.bg-black-blue-light {
+    background-color: $black-blue-light;
+}
+
+.bg-white {
+    background-color: $white;
+}

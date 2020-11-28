@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: $purple;
+    transition: $trans-1;
+    text-decoration: none;
+
+    &:hover {
+        color: darken($purple, 15);
+        transition: $trans-1;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: $roboto;
+    background: $white;
+    color: $black;
+    background: $white;
+    margin: 0 auto;
+}
+
+

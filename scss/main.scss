@@ -1,0 +1,26 @@
+//Only imports in this SCSS file
+
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;700&display=swap');
+
+//1 - GENERAL
+@import '1-general/variables';
+@import '1-general/mixins';
+@import '1-general/global';
+
+//2 - UTILITIES
+@import '2-utilities/misc';
+@import '2-utilities/buttons';
+@import '2-utilities/text';
+@import '2-utilities/spacing';
+
+//3 - MODULES
+@import '3-modules/plan-card';
+
+//4 - LAYOUT
+@import '4-layout/header';
+@import '4-layout/general';
+@import '4-layout/footer';
+
+//5 - PAGES
+@import '5-pages/home';

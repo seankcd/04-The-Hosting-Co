@@ -1,0 +1,34 @@
+//Colours
+$blue: #22a6d8;
+$purple: #a741e2;
+$green: #22d84c;
+$red: #f03232;
+$yellow: #e2c741;
+
+//-Mono Colours
+$black: #2A2D32;
+$black-blue: #393C42;
+$black-blue-light: #3F434B;
+$white: #FFFFFF;
+$gray: #797979;
+
+//Opacities
+$opacity-dark: 0.9;
+$opacity-mid: 0.8;
+$opacity-light: 0.6;
+
+//Fonts
+$poppins: 'Poppins', sans-serif;
+$roboto: 'Roboto', sans-serif;
+
+//Utilities
+$max-width: 1300px;
+$trans-1: all 200ms ease-in;
+$border-radius: 0.6rem;
+$shadow: 0px 6px 12px rgba(0, 0, 0, 0.16);
+$shadow-large: 0 22px 22px rgba(0, 0, 0, 0.16);
+$shadow-filter: drop-shadow(0 22px 22px rgba(0, 0, 0, 0.16));
+
+//-Media Queries
+$resp-phone: 600px;
+$resp-tablet: 950px;

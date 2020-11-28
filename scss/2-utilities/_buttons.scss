@@ -1,0 +1,58 @@
+.btn,
+button {
+    display: inline-block;
+    border: none;
+    color: $white;
+    background: $black-blue;
+    line-height: 1.2;
+    font-family: $poppins;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 0.8rem 1.6rem;
+    margin: 0;
+    border-radius: $border-radius;
+    box-shadow: $shadow;
+    transition: $trans-1;
+    cursor: pointer;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    &:hover {
+        color: darken($white, 15);
+        background: lighten($black-blue, 15);
+    }
+}
+
+.btn-purple {
+    background: $purple;
+
+    &:hover {
+        color: darken($white, 15);
+        background: darken($purple, 15);
+    }
+}
+
+.btn-blue {
+    background: $blue;
+
+    &:hover {
+        color: darken($white, 15);
+        background: darken($blue, 15);
+    }
+}
+
+.btn-outline-white {
+    background: none;
+    color: $white;
+    border: 3.5px solid $white;
+    padding: 0.6rem 1.5rem;
+    box-shadow: none;
+
+    &:hover {
+        color: $purple;
+        background: none;
+    }
+}

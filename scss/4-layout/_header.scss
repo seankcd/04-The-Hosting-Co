@@ -1,0 +1,153 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    --background: transparent;
+    background: var(--background);
+    transition: background 300ms ease-in; /* transition to navbar with background */
+
+    .flex {
+        justify-content: space-between;
+        margin-top: 1.2rem;
+        margin-bottom: 1.2rem;
+
+        .logo {
+            z-index: 99;
+        }
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li {
+            margin-right: 2rem;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            .nav-btns-mobile {
+                display: none;
+            }
+        }
+
+        a {
+            font-weight: 700;
+            text-transform: capitalize;
+            color: $white;
+
+            &:hover {
+                color: $purple;
+            }
+        }
+    }
+
+    .burger {
+        display: none;
+        cursor: pointer;
+        padding: 0.5rem;
+
+        .line-1,
+        .line-2,
+        .line-3 {
+        width: 25px;
+        height: 0.2rem;
+        margin: 0.3rem;
+        border-radius: 8px;
+        background-color: $purple;
+        transition: all 0.3s ease;
+        }
+
+        .line-2 {
+            width: 20px;
+        }
+    }   
+}
+
+.nav-scrolled {
+    --background: rgba(42, 45, 50, 0.9);
+  }
+
+@media screen and (max-width: $resp-phone) {
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        min-height: 10vh;
+
+        .container .nav-btns {
+            display: none;
+        }
+
+        .nav-links {
+            position: absolute;
+            z-index: 1;
+            right: 0;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100%;
+            background: rgba($black, 1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transform-origin: right;
+            transform: scaleX(0); //Was transform: translateX(100%); but had issues with iphone
+            transition: transform 0.3s ease-in;
+
+            li {
+                margin: 2rem 0 0;
+                opacity: 0;
+
+                a {
+                    font-size: 1.5rem;
+                }
+
+                .nav-btns-mobile {
+                    display: inline-block;
+                }
+            }
+        }
+
+        .burger {
+            display: block;
+            z-index: 1;
+        }
+
+        .nav-active {
+            transform: scaleX(1); //Was transform: translateX(0%); but had issues with iphone
+        }
+    }
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+        transition: $trans-1;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+        transition: $trans-1;
+    }
+}
+
+//Buger menu animation
+.toggle .line-1 {
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line-2 {
+    opacity: 0;
+}
+
+.toggle .line-3 {
+    transform: rotate(45deg) translate(-5px,-6px);
+}
