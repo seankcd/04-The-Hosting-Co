@@ -44,6 +44,36 @@ button {
     }
 }
 
+.btn-white-purple {
+    background: $white;
+    color: $purple;
+
+    &:hover {
+        color: darken($purple, 15);
+        background: darken($white, 15);
+    }
+}
+
+.btn-white-blue {
+    background: $white;
+    color: $blue;
+
+    &:hover {
+        color: darken($blue, 15);
+        background: darken($white, 15);
+    }
+}
+
+.btn-white-red {
+    background: $white;
+    color: $red;
+
+    &:hover {
+        color: darken($red, 15);
+        background: darken($white, 15);
+    }
+}
+
 .btn-outline-white {
     background: none;
     color: $white;
@@ -54,5 +84,17 @@ button {
     &:hover {
         color: $purple;
         background: none;
+    }
+}
+
+.btn-grad-purple {
+    background: $purple;
+    background: $grad-purple;
+    color: $white;
+
+    &:hover {
+        color: darken($white, 15);
+        background: $grad-purple;
+        box-shadow: $shadow-purple;
     }
 }

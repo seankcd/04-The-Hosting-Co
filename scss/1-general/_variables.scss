@@ -4,6 +4,7 @@ $purple: #a741e2;
 $green: #22d84c;
 $red: #f03232;
 $yellow: #e2c741;
+$grad-purple: linear-gradient(120deg, rgba(167,65,226,1) 0%, rgba(97,107,232,1) 65%, rgba(34,166,216,1) 100%);
 
 //-Mono Colours
 $black: #2A2D32;
@@ -24,9 +25,10 @@ $roboto: 'Roboto', sans-serif;
 //Utilities
 $max-width: 1300px;
 $trans-1: all 200ms ease-in;
-$border-radius: 0.6rem;
-$shadow: 0px 6px 12px rgba(0, 0, 0, 0.16);
-$shadow-large: 0 22px 22px rgba(0, 0, 0, 0.16);
+$border-radius: 0.8rem;
+$shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+$shadow-purple: 0px 6px 12px rgba(167, 65, 226, 0.2);
+$shadow-large: 0 22px 22px rgba(0, 0, 0, 0.2);
 $shadow-filter: drop-shadow(0 22px 22px rgba(0, 0, 0, 0.16));
 
 //-Media Queries
