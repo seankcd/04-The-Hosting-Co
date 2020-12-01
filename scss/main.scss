@@ -18,9 +18,11 @@
 @import '3-modules/plan-card';
 
 //4 - LAYOUT
-@import '4-layout/header';
-@import '4-layout/general';
-@import '4-layout/footer';
+@import '4-layouts/header';
+@import '4-layouts/defaultSection';
+@import '4-layouts/fwSection';
+@import '4-layouts/general';
+@import '4-layouts/footer';
 
 //5 - PAGES
 @import '5-pages/home';

@@ -96,5 +96,6 @@ button {
         color: darken($white, 15);
         background: $grad-purple;
         box-shadow: $shadow-purple;
+        transform: scale(1.05);
     }
 }

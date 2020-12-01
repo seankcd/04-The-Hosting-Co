@@ -79,6 +79,7 @@ header {
 
 .nav-scrolled {
     --background: rgba(42, 45, 50, 0.9);
+    box-shadow: $shadow;
   }
 
 @media screen and (max-width: $resp-phone) {
