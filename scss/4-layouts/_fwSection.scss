@@ -1,4 +1,4 @@
-#features {
+.fw-section {
     background: $black;
     color: $white;
     padding-top: 8rem;
@@ -17,7 +17,7 @@
         grid-gap: 4rem;
     }
 
-    .features-info {
+    .fw-section-info {
         grid-column: 1/2;
         grid-row: 1/3;
         align-self: start;
@@ -27,24 +27,24 @@
         }
     }
 
-    .features-text {
+    .fw-section-text {
 
         h3 {
             margin-bottom: 1rem;
         }
     }
 
-    .features-storage {
+    .fw-section-storage {
         grid-column: 2/3;
     }
-    .features-support {
+    .fw-section-support {
         grid-column: 3/4;
     }
-    .features-uptime {
+    .fw-section-uptime {
         grid-column: 2/3;
         grid-row: 2/3;
     }
-    .features-speed {
+    .fw-section-speed {
         grid-column: 3/4;
         grid-row: 2/3;
     }

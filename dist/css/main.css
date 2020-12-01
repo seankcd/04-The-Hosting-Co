@@ -438,6 +438,58 @@ header .burger .line-2 {
   padding-bottom: 8rem;
 }
 
+.fw-section {
+  background: #2A2D32;
+  color: #FFFFFF;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.fw-section .container img {
+  margin-right: 1.5rem;
+  align-self: flex-start;
+}
+
+.fw-section p {
+  opacity: 0.6;
+}
+
+.fw-section .grid {
+  grid-gap: 4rem;
+}
+
+.fw-section .fw-section-info {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  align-self: start;
+}
+
+.fw-section .fw-section-info p {
+  margin: 1.5rem 0;
+}
+
+.fw-section .fw-section-text h3 {
+  margin-bottom: 1rem;
+}
+
+.fw-section .fw-section-storage {
+  grid-column: 2/3;
+}
+
+.fw-section .fw-section-support {
+  grid-column: 3/4;
+}
+
+.fw-section .fw-section-uptime {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.fw-section .fw-section-speed {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
 .flex {
   display: flex;
   justify-content: center;
