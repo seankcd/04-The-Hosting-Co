@@ -506,7 +506,7 @@ header .burger .line-2 {
 .hero {
   color: #FFFFFF;
   background: #2A2D32;
-  height: 90vh;
+  height: 100vh;
 }
 
 .hero .flex {
@@ -524,7 +524,7 @@ header .burger .line-2 {
 
 .hero img {
   position: absolute;
-  bottom: 10vh;
+  bottom: 0;
   right: 0;
   align-self: flex-end;
   max-width: 520px;
