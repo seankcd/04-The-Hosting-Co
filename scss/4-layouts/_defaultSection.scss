@@ -1,24 +1,16 @@
 .default-section {
-    padding-top: 6rem;
-    padding-bottom: 8rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
 
     &-header {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-bottom: 8rem;
+        margin-bottom: 7rem;
     
         &-text {
             width: 50%;
         }
     }
-}
-
-.reviews {
-    height: 1000px;
-    background: $white;
-    color: $black;
-    padding-top: 6rem;
-    padding-bottom: 8rem;
 }
