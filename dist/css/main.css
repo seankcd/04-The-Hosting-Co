@@ -81,7 +81,7 @@ button {
   font-weight: bold;
   text-transform: capitalize;
   text-align: center;
-  padding: 0.8rem 1.6rem;
+  padding: 0.9em 1.6em;
   margin: 0;
   border-radius: 0.6rem;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.16);
@@ -120,7 +120,7 @@ button:hover {
   background: none;
   color: #FFFFFF;
   border: 3.5px solid #FFFFFF;
-  padding: 0.6rem 1.5rem;
+  padding: 0.7em 1.5em;
   box-shadow: none;
 }
 
@@ -131,6 +131,11 @@ button:hover {
 
 h1, h2, h3, h4, h5 {
   font-family: "Poppins", sans-serif;
+  line-height: 1.2;
+}
+
+.head-xl {
+  font-size: 3.5rem;
 }
 
 .text-purple {
@@ -149,19 +154,20 @@ header {
   /* transition to navbar with background */
 }
 
-header .flex {
+header .container {
   justify-content: space-between;
   margin-top: 1.2rem;
   margin-bottom: 1.2rem;
 }
 
-header .flex .logo {
+header .container .logo {
   z-index: 99;
 }
 
 header .nav-links {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: start;
   align-items: center;
 }
 
@@ -169,11 +175,11 @@ header .nav-links li {
   margin-right: 2rem;
 }
 
-header .nav-links li:last-child {
+header .nav-links li:nth-child(3) {
   margin-right: 0;
 }
 
-header .nav-links li .nav-btns-mobile {
+header .nav-links li a.nav-btns-mobile {
   display: none;
 }
 
@@ -185,6 +191,14 @@ header .nav-links a {
 
 header .nav-links a:hover {
   color: #a741e2;
+}
+
+header .nav-btns a {
+  margin-right: 2rem;
+}
+
+header .nav-btns a:last-child {
+  margin-right: 0;
 }
 
 header .burger {
@@ -234,6 +248,7 @@ header .burger .line-2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     transform-origin: right;
     transform: scaleX(0);
     transition: transform 0.3s ease-in;
@@ -245,7 +260,7 @@ header .burger .line-2 {
   header .nav-links li a {
     font-size: 1.5rem;
   }
-  header .nav-links li .nav-btns-mobile {
+  header .nav-links li a.nav-btns-mobile {
     display: inline-block;
   }
   header .burger {
@@ -292,7 +307,7 @@ header .burger .line-2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
-  justify-items: start;
+  justify-items: center;
   align-items: center;
   height: 100%;
 }
@@ -305,6 +320,27 @@ header .burger .line-2 {
   color: #FFFFFF;
   background: #2A2D32;
   height: 100vh;
+}
+
+.hero .flex {
+  justify-content: space-between;
+  height: 100%;
+}
+
+.hero .hero-content p {
+  margin: 2rem 0;
+}
+
+.hero .hero-content button {
+  margin-right: 2rem;
+}
+
+.hero img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  align-self: flex-end;
+  max-width: 550px;
 }
 
 .plans {

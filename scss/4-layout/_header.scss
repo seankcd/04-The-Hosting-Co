@@ -8,7 +8,7 @@ header {
     background: var(--background);
     transition: background 300ms ease-in; /* transition to navbar with background */
 
-    .flex {
+    .container {
         justify-content: space-between;
         margin-top: 1.2rem;
         margin-bottom: 1.2rem;
@@ -19,18 +19,19 @@ header {
     }
 
     .nav-links {
-        display: flex;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: start;
         align-items: center;
 
         li {
             margin-right: 2rem;
 
-            &:last-child {
+            &:nth-child(3) {
                 margin-right: 0;
             }
 
-            .nav-btns-mobile {
+            a.nav-btns-mobile {
                 display: none;
             }
         }
@@ -43,6 +44,14 @@ header {
             &:hover {
                 color: $purple;
             }
+        }
+    }
+
+    .nav-btns a {
+        margin-right: 2rem;
+
+        &:last-child {
+            margin-right: 0;
         }
     }
 
@@ -96,6 +105,7 @@ header {
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
             transform-origin: right;
             transform: scaleX(0); //Was transform: translateX(100%); but had issues with iphone
             transition: transform 0.3s ease-in;
@@ -108,7 +118,7 @@ header {
                     font-size: 1.5rem;
                 }
 
-                .nav-btns-mobile {
+                a.nav-btns-mobile {
                     display: inline-block;
                 }
             }
