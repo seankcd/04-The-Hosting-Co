@@ -14,3 +14,9 @@
         }
     }
 }
+
+@media screen and (max-width: $resp-tablet) {
+    .default-section .default-section-header-text {
+        width: 100%;
+    }
+}

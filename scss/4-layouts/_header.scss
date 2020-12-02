@@ -82,7 +82,7 @@ header {
     box-shadow: $shadow;
   }
 
-@media screen and (max-width: $resp-phone) {
+@media screen and (max-width: $resp-tablet) {
     body {
         overflow-x: hidden;
     }

@@ -57,3 +57,40 @@ footer {
         margin-right: 0;
     }
 }
+
+@media screen and (max-width: $resp-tablet) {
+    footer .container {
+        flex-direction: column;
+    }
+
+    .footer-info {
+        margin-bottom: 3rem;
+    }
+
+    .footer-links {
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: $resp-phone) {
+    footer .container {
+        flex-direction: column;
+    }
+
+    footer .footer-info {
+        margin-bottom: 3rem;
+    }
+
+    footer .footer-links {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 3rem;
+
+        ul {
+            margin-right: 0;
+            margin-bottom: 2rem;
+        }
+    }
+}

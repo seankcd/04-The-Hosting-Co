@@ -184,7 +184,7 @@ h1 {
 }
 
 .head-xl {
-  font-size: 70px;
+  font-size: 50px;
 }
 
 .head-l {
@@ -203,13 +203,18 @@ h1 {
   color: #a741e2;
 }
 
+.default-section .grid {
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
 .plan-card {
   background: #a741e2;
   border-radius: 0.8rem;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
-  padding: 2em 2.5em;
+  padding: 2em 2.5rem;
+  width: 100%;
   color: #FFFFFF;
-  width: 320px;
   text-align: center;
   text-transform: capitalize;
 }
@@ -303,6 +308,10 @@ h1 {
   grid-column: 2/3;
   justify-self: end;
   align-self: center;
+}
+
+.review-card-stars img {
+  width: 15px;
 }
 
 .review-card-body {
@@ -404,7 +413,7 @@ header .burger .line-2 {
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1040px) {
   body {
     overflow-x: hidden;
   }
@@ -492,11 +501,17 @@ header .burger .line-2 {
   width: 50%;
 }
 
+@media screen and (max-width: 1040px) {
+  .default-section .default-section-header-text {
+    width: 100%;
+  }
+}
+
 .fw-section {
   background: #2A2D32;
   color: #FFFFFF;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 
 .fw-section .container img {
@@ -508,40 +523,48 @@ header .burger .line-2 {
   opacity: 0.6;
 }
 
-.fw-section .grid {
-  grid-gap: 4rem;
-}
-
-.fw-section .fw-section-info {
-  grid-column: 1/2;
-  grid-row: 1/3;
-  align-self: start;
-}
-
-.fw-section .fw-section-info p {
-  margin: 1.5rem 0;
+.fw-section .container {
+  display: grid;
+  grid-template-areas: 'info section-1 section-2' 'info section-3 section-4';
+  gap: 4rem;
 }
 
 .fw-section .fw-section-text h3 {
   margin-bottom: 1rem;
 }
 
+.fw-section .fw-section-info {
+  grid-area: info;
+}
+
+.fw-section .fw-section-info p {
+  margin: 1.5rem 0;
+}
+
 .fw-section .fw-section-1 {
-  grid-column: 2/3;
+  grid-area: section-1;
 }
 
 .fw-section .fw-section-2 {
-  grid-column: 3/4;
+  grid-area: section-2;
 }
 
 .fw-section .fw-section-3 {
-  grid-column: 2/3;
-  grid-row: 2/3;
+  grid-area: section-3;
 }
 
 .fw-section .fw-section-4 {
-  grid-column: 3/4;
-  grid-row: 2/3;
+  grid-area: section-4;
+}
+
+@media screen and (max-width: 1040px) {
+  .fw-section .container {
+    display: grid;
+    grid-template-areas: 'info' 'section-1' 'section-2' 'section-3' 'section-4';
+  }
+  .fw-section-info {
+    margin-bottom: 3rem;
+  }
 }
 
 .flex {
@@ -624,6 +647,38 @@ footer .footer-social img:last-child {
   margin-right: 0;
 }
 
+@media screen and (max-width: 1040px) {
+  footer .container {
+    flex-direction: column;
+  }
+  .footer-info {
+    margin-bottom: 3rem;
+  }
+  .footer-links {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer .container {
+    flex-direction: column;
+  }
+  footer .footer-info {
+    margin-bottom: 3rem;
+  }
+  footer .footer-links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  footer .footer-links ul {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+}
+
 .hero {
   color: #FFFFFF;
   background: #2A2D32;
@@ -637,32 +692,21 @@ footer .footer-social img:last-child {
 
 .hero .hero-content {
   margin-top: 10vh;
+  position: relative;
+  z-index: 1;
 }
 
 .hero .hero-content p {
   margin: 2rem 0;
+  opacity: 0.6;
 }
 
-.hero .hero-content button {
-  margin-right: 2rem;
-}
-
-.hero img {
+.hero .hero-shapes {
   position: absolute;
   bottom: 0;
   right: 0;
   align-self: flex-end;
   max-width: 520px;
-}
-
-#plans .flex {
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-#plans .flex .flex {
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 #reviews .review-cards-more {
@@ -673,5 +717,20 @@ footer .footer-social img:last-child {
   height: 25px;
   width: auto;
   margin: 0.2rem 0 0 1rem;
+}
+
+@media screen and (max-width: 1040px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero .hero-shapes {
+    opacity: 0.1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */
