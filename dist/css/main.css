@@ -184,15 +184,15 @@ h1 {
 }
 
 .head-xl {
-  font-size: 3.5rem;
+  font-size: 70px;
 }
 
 .head-l {
-  font-size: 3rem;
+  font-size: 38px;
 }
 
 .head-m {
-  font-size: 1.5rem;
+  font-size: 26px;
 }
 
 .text-center {
@@ -485,7 +485,7 @@ header .burger .line-2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 5rem;
+  margin-bottom: 7rem;
 }
 
 .default-section-header-text {
@@ -595,12 +595,20 @@ header .burger .line-2 {
 #plans .flex {
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-top: 6rem;
-  padding-bottom: 8rem;
 }
 
 #plans .flex .flex {
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+#reviews .review-cards-more {
+  margin-top: 4rem;
+}
+
+#reviews .review-cards-more img {
+  height: 25px;
+  width: auto;
+  margin: 0.2rem 0 0 1rem;
 }
 /*# sourceMappingURL=main.css.map */
