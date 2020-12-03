@@ -599,6 +599,11 @@ header .burger .line-2 {
 
 .features-extra-box {
   padding: 5rem 2rem;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .features-extra-box img {
@@ -620,6 +625,9 @@ header .burger .line-2 {
   }
   .features-extra {
     flex-direction: column;
+  }
+  .features-extra-box {
+    height: 50%;
   }
 }
 
@@ -716,9 +724,6 @@ footer .footer-social img:last-child {
 }
 
 @media screen and (max-width: 600px) {
-  footer .container {
-    flex-direction: column;
-  }
   footer .footer-info {
     margin-bottom: 3rem;
   }

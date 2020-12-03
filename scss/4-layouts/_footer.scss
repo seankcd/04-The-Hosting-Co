@@ -73,10 +73,6 @@ footer {
 }
 
 @media screen and (max-width: $resp-phone) {
-    footer .container {
-        flex-direction: column;
-    }
-
     footer .footer-info {
         margin-bottom: 3rem;
     }
