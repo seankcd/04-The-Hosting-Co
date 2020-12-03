@@ -4,7 +4,6 @@
 }
 
 .plan-card {
-    background: rgb(167,65,226);
     border-radius: $border-radius;
     box-shadow: $shadow;
     padding: 2em 2.5rem;
@@ -40,19 +39,4 @@
     button {
         margin-top: 1em;
     }
-}
-
-.bg-grad-purple {
-    background: $purple;
-    background: $grad-purple;
-}
-
-.bg-grad-blue {
-    background: rgb(34,95,216);
-    background: linear-gradient(120deg, rgba(34,95,216,1) 0%, rgba(51,198,202,1) 65%, rgba(34,216,77,1) 100%); 
-}
-
-.bg-grad-red {
-    background: rgb(226,65,65);
-    background: linear-gradient(120deg, rgba(226,65,65,1) 0%, rgba(232,97,160,1) 45%, rgb(216, 158, 34) 100%);
 }

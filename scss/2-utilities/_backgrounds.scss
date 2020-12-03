@@ -1,0 +1,47 @@
+//
+//Solid Backgrounds
+//
+.bg-black {
+    background-color: $black;
+}
+
+.bg-black-blue {
+    background-color: $black-blue;
+}
+
+.bg-black-blue-light {
+    background-color: $black-blue-light;
+}
+
+.bg-white {
+    background-color: $white;
+}
+
+
+//
+//Gradient Backgrounds
+//
+.bg-grad-purple {
+    background: $purple;
+    background: $grad-purple;
+}
+
+.bg-grad-purple-2 {
+    background: $purple;
+    background: linear-gradient(120deg, rgba(97,107,232,1) 0%, rgba(167,65,226,1) 65%, rgba(34,166,216,1) 100%);
+}
+
+.bg-grad-purple-3 {
+    background: $purple;
+    background: linear-gradient(120deg, rgb(156, 97, 232) 0%, rgb(34, 128, 216) 65%, rgba(167,65,226,1) 100%);
+}
+
+.bg-grad-blue {
+    background: rgb(34,95,216);
+    background: $grad-blue; 
+}
+
+.bg-grad-red {
+    background: rgb(226,65,65);
+    background: $grad-red;
+}

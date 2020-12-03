@@ -54,22 +54,6 @@ body {
   opacity: 0.6;
 }
 
-.bg-black {
-  background-color: #2A2D32;
-}
-
-.bg-black-blue {
-  background-color: #393C42;
-}
-
-.bg-black-blue-light {
-  background-color: #3F434B;
-}
-
-.bg-white {
-  background-color: #FFFFFF;
-}
-
 .btn,
 button {
   display: inline-block;
@@ -203,13 +187,53 @@ h1 {
   color: #a741e2;
 }
 
+.bg-black {
+  background-color: #2A2D32;
+}
+
+.bg-black-blue {
+  background-color: #393C42;
+}
+
+.bg-black-blue-light {
+  background-color: #3F434B;
+}
+
+.bg-white {
+  background-color: #FFFFFF;
+}
+
+.bg-grad-purple {
+  background: #a741e2;
+  background: linear-gradient(120deg, #a741e2 0%, #616be8 65%, #22a6d8 100%);
+}
+
+.bg-grad-purple-2 {
+  background: #a741e2;
+  background: linear-gradient(120deg, #616be8 0%, #a741e2 65%, #22a6d8 100%);
+}
+
+.bg-grad-purple-3 {
+  background: #a741e2;
+  background: linear-gradient(120deg, #9c61e8 0%, #2280d8 65%, #a741e2 100%);
+}
+
+.bg-grad-blue {
+  background: #225fd8;
+  background: linear-gradient(120deg, #225fd8 0%, #33c6ca 65%, #22d84d 100%);
+}
+
+.bg-grad-red {
+  background: #e24141;
+  background: linear-gradient(120deg, #e24141 0%, #e861a0 45%, #d89e22 100%);
+}
+
 .default-section .grid {
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 2rem;
 }
 
 .plan-card {
-  background: #a741e2;
   border-radius: 0.8rem;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
   padding: 2em 2.5rem;
@@ -245,21 +269,6 @@ h1 {
 
 .plan-card button {
   margin-top: 1em;
-}
-
-.bg-grad-purple {
-  background: #a741e2;
-  background: linear-gradient(120deg, #a741e2 0%, #616be8 65%, #22a6d8 100%);
-}
-
-.bg-grad-blue {
-  background: #225fd8;
-  background: linear-gradient(120deg, #225fd8 0%, #33c6ca 65%, #22d84d 100%);
-}
-
-.bg-grad-red {
-  background: #e24141;
-  background: linear-gradient(120deg, #e24141 0%, #e861a0 45%, #d89e22 100%);
 }
 
 .review-cards {
@@ -334,9 +343,8 @@ header {
   left: 0;
   right: 0;
   z-index: 999;
-  --background: transparent;
-  background: var(--background);
-  transition: background 300ms ease-in;
+  background: rgba(42, 45, 50, 0.9);
+  transition: all 300ms ease-in;
   /* transition to navbar with background */
 }
 
@@ -409,7 +417,6 @@ header .burger .line-2 {
 }
 
 .nav-scrolled {
-  --background: rgba(42, 45, 50, 0.9);
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -682,7 +689,7 @@ footer .footer-social img:last-child {
 .hero {
   color: #FFFFFF;
   background: #2A2D32;
-  height: 100vh;
+  height: 90vh;
 }
 
 .hero .flex {
@@ -703,7 +710,7 @@ footer .footer-social img:last-child {
 
 .hero .hero-shapes {
   position: absolute;
-  bottom: 0;
+  bottom: 10vh;
   right: 0;
   align-self: flex-end;
   max-width: 520px;
@@ -732,5 +739,28 @@ footer .footer-social img:last-child {
   .hero {
     text-align: center;
   }
+}
+
+.page-header {
+  color: #FFFFFF;
+  background: #2A2D32;
+  height: 50vh;
+}
+
+.page-header .container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+}
+
+.page-header .container .page-header-content {
+  margin-top: 5rem;
+}
+
+.page-header .container p {
+  width: 80%;
+  margin: 1rem 0;
+  opacity: 0.6;
 }
 /*# sourceMappingURL=main.css.map */
