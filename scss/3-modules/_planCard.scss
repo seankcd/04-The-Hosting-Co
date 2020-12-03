@@ -1,8 +1,3 @@
-.default-section .grid {
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 2rem;
-}
-
 .plan-card {
     border-radius: $border-radius;
     box-shadow: $shadow;

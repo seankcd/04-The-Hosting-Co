@@ -19,3 +19,27 @@
 .opacity-light {
     opacity: $opacity-light;
 }
+
+//
+//Labels
+//
+.label {
+    background: $white;
+    display: inline;
+    padding: 0.2em 0.5em;
+    border-radius: 0.6em;
+    font-weight: bold;
+    font-size: 12px;
+
+    &-green {
+        color: $green;
+    }
+
+    &-blue {
+        color: $blue;
+    }
+
+    &-purple {
+        color: $purple;
+    }
+}

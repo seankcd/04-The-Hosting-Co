@@ -53,6 +53,26 @@
     }
 }
 
+.features-extra {
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-box {
+        padding: 5rem 2rem;
+
+        img {
+            align-self: flex-start;
+            width: 100px;
+        }
+
+        h3 {
+            margin: 0.5em 0;
+        }
+    }
+}
+
 @media screen and (max-width: $resp-tablet) {
     .fw-section .container {
         display: grid;
@@ -66,6 +86,10 @@
 
     .fw-section-info {
         margin-bottom: 3rem;
+    }
+
+    .features-extra {
+        flex-direction: column;
     }
 }
 

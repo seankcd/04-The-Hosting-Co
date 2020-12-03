@@ -21,3 +21,33 @@
     }
 }
 
+#software .grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 2rem;
+}
+
+.software-card {
+    background: $white;
+    box-shadow: $shadow;
+    padding: 1.6em;
+    border-radius: $border-radius;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: $trans-1;
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: $shadow-large;
+    }
+
+    img {
+        width: 100px;
+        height: auto;
+    }
+
+    h3 {
+        margin-top: 0.8em;
+    }
+}

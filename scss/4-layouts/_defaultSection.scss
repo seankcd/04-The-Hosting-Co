@@ -13,6 +13,16 @@
             width: 50%;
         }
     }
+
+    &-more {
+        margin-top: 4rem;
+
+        img {
+            height: 25px;
+            width: auto;
+            margin: 0.2rem 0 0 1rem;
+        }
+    }
 }
 
 @media screen and (max-width: $resp-tablet) {

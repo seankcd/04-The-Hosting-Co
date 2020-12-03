@@ -54,6 +54,27 @@ body {
   opacity: 0.6;
 }
 
+.label {
+  background: #FFFFFF;
+  display: inline;
+  padding: 0.2em 0.5em;
+  border-radius: 0.6em;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.label-green {
+  color: #22d84c;
+}
+
+.label-blue {
+  color: #22a6d8;
+}
+
+.label-purple {
+  color: #a741e2;
+}
+
 .btn,
 button {
   display: inline-block;
@@ -68,7 +89,7 @@ button {
   text-align: center;
   padding: 0.9em 1.6em;
   margin: 0;
-  border-radius: 0.8rem;
+  border-radius: 0.8em;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
   transition: all 200ms ease-in;
   cursor: pointer;
@@ -228,13 +249,8 @@ h1 {
   background: linear-gradient(120deg, #e24141 0%, #e861a0 45%, #d89e22 100%);
 }
 
-.default-section .grid {
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 2rem;
-}
-
 .plan-card {
-  border-radius: 0.8rem;
+  border-radius: 0.8em;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
   padding: 2em 2.5rem;
   width: 100%;
@@ -280,7 +296,7 @@ h1 {
   background: #2A2D32;
   color: #FFFFFF;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
-  border-radius: 0.8rem;
+  border-radius: 0.8em;
   padding: 1.5rem;
   text-align: left;
   display: grid;
@@ -508,6 +524,16 @@ header .burger .line-2 {
   width: 50%;
 }
 
+.default-section-more {
+  margin-top: 4rem;
+}
+
+.default-section-more img {
+  height: 25px;
+  width: auto;
+  margin: 0.2rem 0 0 1rem;
+}
+
 @media screen and (max-width: 1040px) {
   .default-section .default-section-header-text {
     width: 100%;
@@ -564,6 +590,26 @@ header .burger .line-2 {
   grid-area: section-4;
 }
 
+.features-extra {
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.features-extra-box {
+  padding: 5rem 2rem;
+}
+
+.features-extra-box img {
+  align-self: flex-start;
+  width: 100px;
+}
+
+.features-extra-box h3 {
+  margin: 0.5em 0;
+}
+
 @media screen and (max-width: 1040px) {
   .fw-section .container {
     display: grid;
@@ -571,6 +617,9 @@ header .burger .line-2 {
   }
   .fw-section-info {
     margin-bottom: 3rem;
+  }
+  .features-extra {
+    flex-direction: column;
   }
 }
 
@@ -716,14 +765,9 @@ footer .footer-social img:last-child {
   max-width: 520px;
 }
 
-#reviews .review-cards-more {
-  margin-top: 4rem;
-}
-
-#reviews .review-cards-more img {
-  height: 25px;
-  width: auto;
-  margin: 0.2rem 0 0 1rem;
+#plans .grid {
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
 }
 
 @media screen and (max-width: 1040px) {
@@ -762,5 +806,36 @@ footer .footer-social img:last-child {
   width: 80%;
   margin: 1rem 0;
   opacity: 0.6;
+}
+
+#software .grid {
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 2rem;
+}
+
+.software-card {
+  background: #FFFFFF;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  padding: 1.6em;
+  border-radius: 0.8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 200ms ease-in;
+}
+
+.software-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 22px 22px rgba(0, 0, 0, 0.2);
+}
+
+.software-card img {
+  width: 100px;
+  height: auto;
+}
+
+.software-card h3 {
+  margin-top: 0.8em;
 }
 /*# sourceMappingURL=main.css.map */
