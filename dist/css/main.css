@@ -166,7 +166,6 @@ button:hover {
 }
 
 .btn-grad-purple {
-  background: #a741e2;
   background: linear-gradient(120deg, #a741e2 0%, #616be8 65%, #22a6d8 100%);
   color: #FFFFFF;
 }
@@ -174,6 +173,30 @@ button:hover {
 .btn-grad-purple:hover {
   color: #d9d9d9;
   background: linear-gradient(120deg, #a741e2 0%, #616be8 65%, #22a6d8 100%);
+  box-shadow: 0px 6px 12px rgba(167, 65, 226, 0.2);
+  transform: scale(1.05);
+}
+
+.btn-grad-blue {
+  background: linear-gradient(120deg, #225fd8 0%, #33c6ca 65%, #22d84d 100%);
+  color: #FFFFFF;
+}
+
+.btn-grad-blue:hover {
+  color: #d9d9d9;
+  background: linear-gradient(120deg, #225fd8 0%, #33c6ca 65%, #22d84d 100%);
+  box-shadow: 0px 6px 12px rgba(167, 65, 226, 0.2);
+  transform: scale(1.05);
+}
+
+.btn-grad-red {
+  background: linear-gradient(120deg, #e24141 0%, #e86168 45%, #d88322 100%);
+  color: #FFFFFF;
+}
+
+.btn-grad-red:hover {
+  color: #d9d9d9;
+  background: linear-gradient(120deg, #e24141 0%, #e86168 45%, #d88322 100%);
   box-shadow: 0px 6px 12px rgba(167, 65, 226, 0.2);
   transform: scale(1.05);
 }
@@ -208,6 +231,14 @@ h1 {
   color: #a741e2;
 }
 
+.text-blue {
+  color: #22a6d8;
+}
+
+.text-red {
+  color: #f03232;
+}
+
 .bg-black {
   background-color: #2A2D32;
 }
@@ -225,28 +256,39 @@ h1 {
 }
 
 .bg-grad-purple {
-  background: #a741e2;
   background: linear-gradient(120deg, #a741e2 0%, #616be8 65%, #22a6d8 100%);
 }
 
 .bg-grad-purple-2 {
-  background: #a741e2;
   background: linear-gradient(120deg, #616be8 0%, #a741e2 65%, #22a6d8 100%);
 }
 
 .bg-grad-purple-3 {
-  background: #a741e2;
   background: linear-gradient(120deg, #9c61e8 0%, #2280d8 65%, #a741e2 100%);
 }
 
 .bg-grad-blue {
-  background: #225fd8;
   background: linear-gradient(120deg, #225fd8 0%, #33c6ca 65%, #22d84d 100%);
 }
 
+.bg-grad-blue-2 {
+  background: linear-gradient(120deg, #225fd8 0%, #22d8a1 65%, #33c6ca 100%);
+}
+
+.bg-grad-blue-3 {
+  background: linear-gradient(120deg, #2295d8 0%, #33cab6 65%, #22d88c 100%);
+}
+
 .bg-grad-red {
-  background: #e24141;
-  background: linear-gradient(120deg, #e24141 0%, #e861a0 45%, #d89e22 100%);
+  background: linear-gradient(120deg, #e24141 0%, #e86168 45%, #d88322 100%);
+}
+
+.bg-grad-red-2 {
+  background: linear-gradient(120deg, #e26741 0%, #e8617e 45%, #d89822 100%);
+}
+
+.bg-grad-red-3 {
+  background: linear-gradient(120deg, #e29c41 0%, #e86161 45%, #d87422 100%);
 }
 
 .plan-card {

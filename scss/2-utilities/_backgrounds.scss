@@ -22,26 +22,37 @@
 //Gradient Backgrounds
 //
 .bg-grad-purple {
-    background: $purple;
     background: $grad-purple;
 }
 
 .bg-grad-purple-2 {
-    background: $purple;
     background: linear-gradient(120deg, rgba(97,107,232,1) 0%, rgba(167,65,226,1) 65%, rgba(34,166,216,1) 100%);
 }
 
 .bg-grad-purple-3 {
-    background: $purple;
     background: linear-gradient(120deg, rgb(156, 97, 232) 0%, rgb(34, 128, 216) 65%, rgba(167,65,226,1) 100%);
 }
 
 .bg-grad-blue {
-    background: rgb(34,95,216);
     background: $grad-blue; 
 }
 
+.bg-grad-blue-2 {
+    background: linear-gradient(120deg, rgba(34,95,216,1) 0%, rgb(34, 216, 161) 65%, rgba(51,198,202,1) 100%);
+}
+
+.bg-grad-blue-3 {
+    background: linear-gradient(120deg, rgb(34, 149, 216) 0%, rgb(51, 202, 182) 65%, rgb(34, 216, 140) 100%);
+}
+
 .bg-grad-red {
-    background: rgb(226,65,65);
     background: $grad-red;
+}
+
+.bg-grad-red-2 {
+    background: linear-gradient(120deg, rgb(226, 103, 65) 0%, rgb(232, 97, 126) 45%, rgb(216, 152, 34) 100%);
+}
+
+.bg-grad-red-3 {
+    background: linear-gradient(120deg, rgb(226, 156, 65) 0%, rgb(232, 97, 97) 45%, rgb(216, 116, 34) 100%);
 }

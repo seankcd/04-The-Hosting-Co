@@ -6,7 +6,7 @@ $red: #f03232;
 $yellow: #e2c741;
 $grad-purple: linear-gradient(120deg, rgba(167,65,226,1) 0%, rgba(97,107,232,1) 65%, rgba(34,166,216,1) 100%);
 $grad-blue: linear-gradient(120deg, rgba(34,95,216,1) 0%, rgba(51,198,202,1) 65%, rgba(34,216,77,1) 100%);
-$grad-red: linear-gradient(120deg, rgba(226,65,65,1) 0%, rgba(232,97,160,1) 45%, rgb(216, 158, 34) 100%);
+$grad-red: linear-gradient(120deg, rgba(226,65,65,1) 0%, rgb(232, 97, 104) 45%, rgb(216, 131, 34) 100%);
 
 //-Mono Colours
 $black: #2A2D32;
@@ -30,6 +30,8 @@ $trans-1: all 200ms ease-in;
 $border-radius: 0.8em;
 $shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 $shadow-purple: 0px 6px 12px rgba(167, 65, 226, 0.2);
+$shadow-blue: 0px 6px 12px rgba(167, 65, 226, 0.2);
+$shadow-red: 0px 6px 12px rgba(167, 65, 226, 0.2);
 $shadow-large: 0 22px 22px rgba(0, 0, 0, 0.2);
 $shadow-filter: drop-shadow(0 22px 22px rgba(0, 0, 0, 0.16));
 

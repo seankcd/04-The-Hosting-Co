@@ -88,7 +88,6 @@ button {
 }
 
 .btn-grad-purple {
-    background: $purple;
     background: $grad-purple;
     color: $white;
 
@@ -96,6 +95,30 @@ button {
         color: darken($white, 15);
         background: $grad-purple;
         box-shadow: $shadow-purple;
+        transform: scale(1.05);
+    }
+}
+
+.btn-grad-blue {
+    background: $grad-blue;
+    color: $white;
+
+    &:hover {
+        color: darken($white, 15);
+        background: $grad-blue;
+        box-shadow: $shadow-blue;
+        transform: scale(1.05);
+    }
+}
+
+.btn-grad-red {
+    background: $grad-red;
+    color: $white;
+
+    &:hover {
+        color: darken($white, 15);
+        background: $grad-red;
+        box-shadow: $shadow-red;
         transform: scale(1.05);
     }
 }
