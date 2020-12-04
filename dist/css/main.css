@@ -57,6 +57,7 @@ body {
 .label {
   background: #FFFFFF;
   display: inline;
+  max-height: 1.7em;
   padding: 0.2em 0.5em;
   border-radius: 0.6em;
   font-weight: bold;
@@ -73,6 +74,10 @@ body {
 
 .label-purple {
   color: #a741e2;
+}
+
+.no-m-right {
+  margin-right: 0;
 }
 
 .btn,
@@ -102,6 +107,26 @@ button {
 button:hover {
   color: #d9d9d9;
   background: #5c616b;
+}
+
+.btn-search-purple {
+  background: #a741e2;
+  border-radius: 0.8em 0 0 0.8em;
+}
+
+.btn-search-purple:hover {
+  color: #d9d9d9;
+  background: #801cba;
+}
+
+.btn-search-blue {
+  background: #22a6d8;
+  border-radius: 0.8em 0 0 0.8em;
+}
+
+.btn-search-blue:hover {
+  color: #d9d9d9;
+  background: #187396;
 }
 
 .btn-purple {
@@ -253,6 +278,36 @@ h1 {
 
 .bg-white {
   background-color: #FFFFFF;
+}
+
+.bg-purple {
+  color: #FFFFFF;
+  background-color: #a741e2;
+}
+
+.bg-blue {
+  color: #FFFFFF;
+  background-color: #22a6d8;
+}
+
+.bg-green {
+  color: #FFFFFF;
+  background-color: #22d84c;
+}
+
+.bg-red {
+  color: #FFFFFF;
+  background-color: #f03232;
+}
+
+.bg-yellow {
+  color: #FFFFFF;
+  background-color: #e2c741;
+}
+
+.bg-gray {
+  color: #FFFFFF;
+  background-color: #919191;
 }
 
 .bg-grad-purple {
@@ -671,6 +726,144 @@ header .burger .line-2 {
   .features-extra-box {
     height: 50%;
   }
+}
+
+.twocol-section {
+  display: grid;
+  gap: 3em;
+  grid-template-columns: 22% 2fr;
+  justify-items: space-between;
+  align-items: center;
+  padding: 4em 2em;
+}
+
+.twocol-section .side-nav {
+  align-self: start;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 0.8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em 2em;
+}
+
+.twocol-section .side-nav-links {
+  margin-bottom: 1.2em;
+}
+
+.twocol-section .side-nav-links a {
+  color: #2A2D32;
+}
+
+.twocol-section .side-nav-links a:hover {
+  color: #a741e2;
+}
+
+.twocol-section .side-nav-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+  font-size: 1.2rem;
+}
+
+.twocol-section .side-nav-header img {
+  margin-left: 0.5em;
+}
+
+.twocol-section .twocol-main-header {
+  margin-bottom: 2em;
+}
+
+.twocol-section .twocol-main-search {
+  width: 100%;
+  display: flex;
+  margin-bottom: 3em;
+}
+
+.twocol-section .twocol-main-search input[type=text] {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  background: #f1f1f1;
+  height: 50px;
+  width: 100%;
+  border: none;
+  font-size: 1.2em;
+  opacity: 0.6;
+  padding: 0 0.8em;
+  border-radius: 0 0.8em 0.8em 0;
+}
+
+.twocol-section .twocol-main-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3em;
+}
+
+.twocol-section .twocol-main-cards-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.twocol-section .twocol-main-cards-header .label {
+  margin-left: 1em;
+}
+
+.twocol-section .twocol-main-cards .card-1 {
+  margin-right: 1em;
+}
+
+.twocol-section .twocol-main-cards .twocol-info-card {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  padding: 2em;
+  border-radius: 0.8em;
+}
+
+.twocol-section .twocol-main-cards .twocol-info-card-text p {
+  opacity: 0.6;
+  font-size: 0.8rem;
+}
+
+.twocol-section .twocol-main-cards .twocol-info-card-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.twocol-section .twocol-main-cards .twocol-info-card-content:last-child {
+  margin-bottom: 0;
+}
+
+.twocol-section .twocol-main-cards .twocol-info-card-content .label {
+  margin-left: 6em;
+}
+
+.twocol-section .twocol-main-bottom-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.twocol-section .twocol-main-bottom-header .label {
+  margin-left: 1em;
+}
+
+.twocol-section .twocol-main-bottom h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.2em;
+}
+
+.twocol-section .twocol-main-bottom-body {
+  margin-bottom: 1.5em;
+}
+
+.twocol-section .twocol-main-bottom-body p {
+  margin-bottom: 0.2em;
+}
+
+.twocol-section .twocol-main-bottom-body a {
+  font-size: 0.9rem;
+  font-weight: 700;
 }
 
 .flex {

@@ -1,0 +1,144 @@
+.twocol-section {
+    display: grid;
+    gap: 3em;
+    grid-template-columns: 22% 2fr;
+    justify-items: space-between;
+    align-items: center;
+    padding: 4em 2em;
+
+    .side-nav {
+        align-self: start;
+        background: $white;
+        box-shadow: $shadow;
+        border-radius: $border-radius;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2em 2em;
+
+        &-links {
+            margin-bottom: 1.2em;
+
+            a {
+                color: $black;
+
+                &:hover {
+                    color: $purple;
+                }
+            }
+        }
+
+        &-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5em;
+            font-size: 1.2rem;
+
+            img {
+                margin-left: 0.5em;
+            }
+        }
+
+    }
+
+    .twocol-main {
+
+        &-header {
+            margin-bottom: 2em;
+        }
+
+        &-search {
+            width: 100%;
+            display: flex;
+            margin-bottom: 3em;
+
+            input[type=text] {
+                box-shadow: $shadow;
+                background: rgb(241, 241, 241);
+                height: 50px;
+                width: 100%;
+                border: none;
+                font-size: 1.2em;
+                opacity: $opacity-light;
+                padding: 0 0.8em;
+                border-radius: 0 0.8em 0.8em 0;
+            }
+        }
+
+        &-cards {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 3em;
+
+            &-header {
+                display: flex;
+                align-items: center;
+                margin-bottom: 1em;
+
+                .label {
+                    margin-left: 1em;
+                }
+            }
+
+            .card-1 {
+                margin-right: 1em;
+            }
+
+            .twocol-info-card {
+                box-shadow: $shadow;
+                padding: 2em;
+                border-radius: $border-radius;
+
+                &-text p {
+                    opacity: $opacity-light;
+                    font-size: 0.8rem;
+                }
+
+                &-content {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 1em;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    .label {
+                        margin-left: 6em;
+                    }
+                }
+            }
+        }
+
+        &-bottom {
+
+            &-header {
+                display: flex;
+                align-items: center;
+                margin-bottom: 1em;
+
+                .label {
+                    margin-left: 1em;
+                }
+            }
+
+            h4 {
+                font-size: 1.1rem;
+                margin-bottom: 0.2em;
+            }
+
+            &-body {
+                margin-bottom: 1.5em;
+
+                p {
+                    margin-bottom: 0.2em;
+                }
+
+                a {
+                    font-size: 0.9rem;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

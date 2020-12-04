@@ -26,6 +26,26 @@ button {
     }
 }
 
+.btn-search-purple {
+    background: $purple;
+    border-radius: 0.8em 0 0 0.8em;
+
+    &:hover {
+        color: darken($white, 15);
+        background: darken($purple, 15);
+    }
+}
+
+.btn-search-blue {
+    background: $blue;
+    border-radius: 0.8em 0 0 0.8em;
+
+    &:hover {
+        color: darken($white, 15);
+        background: darken($blue, 15);
+    }
+}
+
 .btn-purple {
     background: $purple;
 

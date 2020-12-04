@@ -26,6 +26,7 @@
 .label {
     background: $white;
     display: inline;
+    max-height: 1.7em;
     padding: 0.2em 0.5em;
     border-radius: 0.6em;
     font-weight: bold;
@@ -42,4 +43,11 @@
     &-purple {
         color: $purple;
     }
+}
+
+//
+//Margin Gone
+//
+.no-m-right {
+    margin-right: 0;
 }
