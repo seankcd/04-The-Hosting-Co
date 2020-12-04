@@ -1,26 +1,3 @@
-.page-header {
-    color: $white;
-    background: $black;
-    height: 50vh;
-
-    .container {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        height: 100%;
-
-        .page-header-content {
-            margin-top: 5rem;
-        }
-
-        p {
-            width: 80%;
-            margin: 1rem 0;
-            opacity: $opacity-light;
-        }
-    }
-}
-
 #software .grid {
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 2rem;
