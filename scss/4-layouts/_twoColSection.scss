@@ -142,3 +142,74 @@
         }
     }
 }
+
+
+@media screen and (max-width: $resp-tablet) {
+    .twocol-section {
+        grid-template-columns: 1fr;
+
+        .side-nav {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .side-nav-header {
+            justify-content: center;
+        }
+
+        .twocol-main-header {
+            
+            h1 {
+                font-size: 1.6rem;
+            }
+        }
+
+        .twocol-main-search input[type=text] {
+            padding: 0 0.2em;
+            width: 100%;
+        }
+
+        .twocol-main-cards {
+            flex-direction: column;
+            margin-bottom: 0;
+
+            &-group {
+                margin-bottom: 4em;
+            }
+    
+            &-header {
+
+                 h2 {
+                     font-size: 1.4rem;
+                 }
+            }
+
+            .twocol-info-card-content .label {
+                margin-left: 2.2em
+            }
+
+            .card-1 {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $resp-phone) {
+    .twocol-section {
+        grid-template-columns: 1fr;
+
+        .side-nav {
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .side-nav-header {
+            justify-content: center;
+        }
+
+        .twocol-main-search input[type=text] {
+
+        }
+    }
+}

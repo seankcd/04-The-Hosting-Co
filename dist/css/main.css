@@ -888,6 +888,55 @@ header .burger .line-2 {
   font-weight: 700;
 }
 
+@media screen and (max-width: 1040px) {
+  .twocol-section {
+    grid-template-columns: 1fr;
+  }
+  .twocol-section .side-nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .twocol-section .side-nav-header {
+    justify-content: center;
+  }
+  .twocol-section .twocol-main-header h1 {
+    font-size: 1.6rem;
+  }
+  .twocol-section .twocol-main-search input[type=text] {
+    padding: 0 0.2em;
+    width: 100%;
+  }
+  .twocol-section .twocol-main-cards {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .twocol-section .twocol-main-cards-group {
+    margin-bottom: 4em;
+  }
+  .twocol-section .twocol-main-cards-header h2 {
+    font-size: 1.4rem;
+  }
+  .twocol-section .twocol-main-cards .twocol-info-card-content .label {
+    margin-left: 2.2em;
+  }
+  .twocol-section .twocol-main-cards .card-1 {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .twocol-section {
+    grid-template-columns: 1fr;
+  }
+  .twocol-section .side-nav {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .twocol-section .side-nav-header {
+    justify-content: center;
+  }
+}
+
 .flex {
   display: flex;
   justify-content: center;
