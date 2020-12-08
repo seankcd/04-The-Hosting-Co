@@ -1070,7 +1070,7 @@ footer .footer-social img:last-child {
 .hero {
   color: #FFFFFF;
   background: #2A2D32;
-  height: 90vh;
+  height: 100vh;
 }
 
 .hero .flex {
@@ -1091,7 +1091,7 @@ footer .footer-social img:last-child {
 
 .hero .hero-shapes {
   position: absolute;
-  bottom: 10vh;
+  bottom: 0;
   right: 0;
   align-self: flex-end;
   max-width: 520px;

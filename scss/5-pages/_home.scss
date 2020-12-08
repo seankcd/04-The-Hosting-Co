@@ -1,7 +1,7 @@
 .hero {
     color: $white;
     background: $black;
-    height: 90vh;
+    height: 100vh;
 
     .flex {
         justify-content: space-between;
@@ -21,7 +21,7 @@
 
     .hero-shapes {
         position: absolute;
-        bottom: 10vh; 
+        bottom: 0; 
         right: 0;
         align-self: flex-end;
         max-width: 520px;
