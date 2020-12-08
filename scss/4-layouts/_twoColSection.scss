@@ -70,6 +70,26 @@
             justify-content: space-between;
             margin-bottom: 3em;
 
+            &-cats {
+                margin-right: 1rem;
+                display: grid;
+
+                .twocol-main-cards-header {
+                    align-self: start;
+                }
+            }
+
+            &-cats-links {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                justify-items: center;
+                align-items: center;
+
+                .link {
+                    margin-bottom: 1rem;
+                }
+            }
+
             &-header {
                 display: flex;
                 align-items: center;

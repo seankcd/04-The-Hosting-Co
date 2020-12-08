@@ -821,6 +821,26 @@ header .burger .line-2 {
   margin-bottom: 3em;
 }
 
+.twocol-section .twocol-main-cards-cats {
+  margin-right: 1rem;
+  display: grid;
+}
+
+.twocol-section .twocol-main-cards-cats .twocol-main-cards-header {
+  align-self: start;
+}
+
+.twocol-section .twocol-main-cards-cats-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.twocol-section .twocol-main-cards-cats-links .link {
+  margin-bottom: 1rem;
+}
+
 .twocol-section .twocol-main-cards-header {
   display: flex;
   align-items: center;
